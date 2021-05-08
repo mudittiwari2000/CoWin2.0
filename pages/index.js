@@ -3,7 +3,7 @@ import Head from "next/head"
 
 // Redux
 import { useDispatch } from "react-redux"
-import { toggleTheme } from "redux/slices/themeSlice"
+import { toggleTheme } from "app/redux/slices/themeSlice"
 
 export default function Home() {
   const dispatch = useDispatch()
@@ -39,7 +39,12 @@ export default function Home() {
             neque laudantium? Sapiente accusantium, neque nulla itaque et atque
             iure numquam laudantium, eius, labore dolorem.
           </Paper>
-          <Button variant="contained" size="large" onClick={handleToggleTheme}>
+          <Button
+            variant="contained"
+            size="large"
+            color="secondary"
+            onClick={handleToggleTheme}
+          >
             Toggle Theme
           </Button>
         </Box>
